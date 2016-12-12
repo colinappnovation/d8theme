@@ -1,0 +1,17 @@
+name: My Custom Theme
+description: 'An awesome theme which is made by Colin'
+type: theme
+version: 1.0-beta1
+core: 8.x
+
+# Used to override CSS libraries from other modules as need
+# stylesheets-remove should not be used!
+# @see https://www.drupal.org/docs/8/theming-drupal-8/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme
+libraries-override: true
+
+# Used to hide regions from the block layout and/or other modules
+regions_hidden:
+  - sidebar_second
+
+# Apply a screen in the appearing admin page.
+screenshot: mytheme.jpeg
