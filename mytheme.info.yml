@@ -15,3 +15,8 @@ regions_hidden:
 
 # Apply a screen in the appearing admin page.
 screenshot: mytheme.jpeg
+
+# The theme can inherit the resources from another theme by defining it as a base theme. 
+# It is recommended to inherit from classy or stable, to ensure your own theme is more 
+# stable to any potential future changes in core theming.
+base theme: classy
