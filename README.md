@@ -17,6 +17,9 @@ the link for more information.
 
 http://drupal.stackexchange.com/questions/211928/how-can-i-make-kint-load-faster-when-debugging-twig-templates
 
+## Control structures and general TWIG
+http://twig.sensiolabs.org/doc/templates.html#control-structure
+
 ### Configuration change
 
 ```

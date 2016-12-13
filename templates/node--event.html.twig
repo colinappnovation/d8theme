@@ -1,1 +1,32 @@
-{{ kint(content) }}
+{% set categories = content.field_event_categories| render %}
+{% set speakers = content.field_event_speakers| render %}
+{% set articles = content.field_related_articles| render %}
+{% set image = content.field_event_image| render %}
+
+<table>
+    <tr>
+      <td style="width: 50%">{{ content.body }}</td>
+      <td style="padding:25px">{{ image }}</td>
+    </tr>
+    <tr>
+      <td width=50% valign="top" style="border: 1px solid #ccc">
+        <ul>
+            <li>{{ content.field_event_capacity }}</li>
+            <li>{{ speakers }}</li>
+            <li>{{ categories }}</li>
+        </ul>
+      </td>
+      <td width=50% valign="top" style="border: 1px solid #ccc">
+        <ul>
+          {% if content.field_event_website| render %}
+            <li>{{ content.field_event_website }}</li>
+          {% endif %}
+          {% if articles %}
+            <li>{{ articles }}</li>
+          {% endif %}
+        </ul>
+      </td>
+    </tr>
+</table>
+
+
